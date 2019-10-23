@@ -64,6 +64,7 @@ A quick look at the top-level files and directories you'll see in a this project
     ├── gatsby-config.js
     ├── gatsby-node.js
     ├── gatsby-ssr.js
+    ├── CODE_OF_CONDUCT.md
     ├── LICENSE
     ├── LICENSE.deps
     ├── package-lock.json
@@ -86,15 +87,17 @@ A quick look at the top-level files and directories you'll see in a this project
 
 8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9.  **`LICENSE`**: This project is licensed under the Apache 2 license.
+9. **`CODE_OF_CONDUCT.md`**: This is the code of conduct for this project.
 
-10.  **`LICENSE.deps`**: This is the license of dependencies used in this project.
+10.  **`LICENSE`**: This project is licensed under the Apache 2 license.
 
-11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+11.  **`LICENSE.deps`**: This is the license of dependencies used in this project.
 
-12. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+12. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-13. **`README.md`**: A text file containing useful reference information about your project.
+13. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+14. **`README.md`**: A text file containing useful reference information about your project.
 
 ## 💫 Deploy
 
