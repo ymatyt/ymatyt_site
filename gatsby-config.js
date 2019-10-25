@@ -35,7 +35,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-yaml`,
+      resolve: `gatsby-transformer-toml`,
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

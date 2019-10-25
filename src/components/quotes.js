@@ -11,17 +11,18 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Quotes = ({ num_quotes }) => {
   const quote_records = useStaticQuery(graphql`
-    query AllQuotes {
-      allQuotesYaml {
-        nodes {
-          id
+    query {
+      quotesToml {
+        quotes {
           quote
-          author_givenname
-          author_surname
+          author {
+            givenname
+            surname
+          }
         }
       }
     }
-  `).allQuotesYaml.nodes;
+  `).quotesToml.quotes;
 
   const total = quote_records.length;
 
@@ -34,6 +35,7 @@ const Quotes = ({ num_quotes }) => {
     } while (old_indices.has(index));
     old_indices.add(index);
     var split_quote = quote_records[index].quote.split(/''/);
+    console.log(quote_records[index]);
     var quote = split_quote.reduce((out, v, i) => {
       if (i % 2 === 0)
         return <>{out}{ v }</>
@@ -41,15 +43,14 @@ const Quotes = ({ num_quotes }) => {
         return <>{out}<q>{ v }</q></>
     });
     quotes.push(
-        <figure key={quote_records[index].id}>
+        <figure key={index}>
          <blockquote><q>{ quote }</q></blockquote>
-         <figcaption>&mdash;{quote_records[index].author_givenname}{` `}
-           {quote_records[index].author_surname}
+         <figcaption>&mdash;{quote_records[index].author.givenname}{` `}
+           {quote_records[index].author.surname}
          </figcaption>
         </figure>
        );
 
-    console.log(quote)
   }
 
   return quotes;
