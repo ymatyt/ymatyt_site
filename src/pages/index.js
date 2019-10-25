@@ -11,7 +11,7 @@ const IndexPage = () => (
     <>
       <section id="quotes">
         <header>A couple quotes to remind you how amazing you are:</header>
-        <Quotes num_quotes={ 2 } />
+        <Quotes num_quotes={2} />
       </section>
     </>
   </Layout>

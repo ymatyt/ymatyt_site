@@ -22,38 +22,50 @@ const Quotes = ({ num_quotes }) => {
         }
       }
     }
-  `).quotesToml.quotes;
+  `).quotesToml.quotes
 
-  const total = quote_records.length;
+  const total = quote_records.length
 
-
-  var old_indices = new Set([]);
-  var quotes = [];
-  for (var i=0; i<Math.min(num_quotes, total); i++) {
+  var old_indices = new Set([])
+  var quotes = []
+  for (var i = 0; i < Math.min(num_quotes, total); i++) {
     do {
-      var index = Math.floor(Math.random() * total);
-    } while (old_indices.has(index));
-    old_indices.add(index);
-    var split_quote = quote_records[index].quote.split(/''/);
-    console.log(quote_records[index]);
+      var index = Math.floor(Math.random() * total)
+    } while (old_indices.has(index))
+    old_indices.add(index)
+    var split_quote = quote_records[index].quote.split(/''/)
+    console.log(quote_records[index])
     var quote = split_quote.reduce((out, v, i) => {
       if (i % 2 === 0)
-        return <>{out}{ v }</>
+        return (
+          <>
+            {out}
+            {v}
+          </>
+        )
       else
-        return <>{out}<q>{ v }</q></>
-    });
+        return (
+          <>
+            {out}
+            <q>{v}</q>
+          </>
+        )
+    })
     quotes.push(
-        <figure key={index}>
-         <blockquote><q>{ quote }</q></blockquote>
-         <figcaption>&mdash;{quote_records[index].author.givenname}{` `}
-           {quote_records[index].author.surname}
-         </figcaption>
-        </figure>
-       );
-
+      <figure key={index}>
+        <blockquote>
+          <q>{quote}</q>
+        </blockquote>
+        <figcaption>
+          &mdash;{quote_records[index].author.givenname}
+          {` `}
+          {quote_records[index].author.surname}
+        </figcaption>
+      </figure>
+    )
   }
 
-  return quotes;
+  return quotes
 }
 
 Quotes.defaultProps = {
