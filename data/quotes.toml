@@ -3,8 +3,9 @@
 # This file is in toml. The "quotes" is a table of tables with the following
 # schema:
 # [[quotes]]
-# quote = """The actual quotation text. Please use two single quotes ('') to
-#            mark the start and end of a quotation within the quotation."""
+# quote = """\
+#     The actual quotation text. Please use two single quotes ('') to
+#     mark the start and end of a quotation within the quotation."""
 # [quotes.author]
 # givename = The author's given name
 # surname = The author's surname
