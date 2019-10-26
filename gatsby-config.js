@@ -37,12 +37,9 @@ module.exports = {
     },
     `gatsby-transformer-toml`,
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        trackingIds: [
-          "G-BBRBZYNM5S",
-          "UA-150896529-1",
-        ],
+        id: "GTM-TCSKLZB",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
