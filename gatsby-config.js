@@ -3,6 +3,7 @@ module.exports = {
     title: `You're More Amazing Than You Think!`,
     description: `YMATYT is a site to help folks realize their importance in the world.`,
     author: `Wren Turkal`,
+    siteUrl: `https://ymatyt.com/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -47,5 +48,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }
