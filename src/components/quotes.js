@@ -34,7 +34,6 @@ const Quotes = ({ num_quotes }) => {
     } while (old_indices.has(index))
     old_indices.add(index)
     var split_quote = quote_records[index].quote.split(/''/)
-    console.log(quote_records[index])
     var quote = split_quote.reduce((out, v, i) => {
       if (i % 2 === 0)
         return (
