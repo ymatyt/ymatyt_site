@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `You're More Amazing Than You Think!`,
+        short_name: `ymatyt`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
