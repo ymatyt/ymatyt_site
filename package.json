@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ymatyt-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "YMATYT is a site to help folks realize their importance in the world.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Wren Turkal <wt@penguintechs.org>",
   "dependencies": {
     "gatsby": "^2.16.5",
     "gatsby-image": "^2.2.29",
