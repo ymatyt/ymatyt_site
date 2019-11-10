@@ -7,7 +7,7 @@ import "./common.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title=""/>
     <>
       <section id="quotes">
         <header>A couple quotes to remind you how amazing you are:</header>
