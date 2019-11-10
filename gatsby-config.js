@@ -22,8 +22,8 @@ module.exports = {
         name: `You're More Amazing Than You Think!`,
         short_name: `ymatyt`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `white`,
+        theme_color: `mediumpurple`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
