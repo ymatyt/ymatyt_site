@@ -28,11 +28,14 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()},{` `}
-        <a href="https://github.com/wt">Wren Turkal</a>.
-        <br />
-        Contribute your positivity to YMATYT{" "}
-        <a href="https://github.com/ymatyt/ymatyt_site">here</a>.
+        <div>
+          © {new Date().getFullYear()},{` `}
+          <a href="https://github.com/wt">Wren Turkal</a>.
+        </div>
+        <div>
+          Contribute your positivity to YMATYT{" "}
+          <a href="https://github.com/ymatyt/ymatyt_site">here</a>.
+        </div>
       </footer>
     </>
   )
