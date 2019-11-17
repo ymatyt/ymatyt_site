@@ -8,12 +8,10 @@ import "./common.css"
 const IndexPage = () => (
   <Layout>
     <SEO title=""/>
-    <>
-      <section id="quotes">
-        <header>A couple quotes to remind you how amazing you are:</header>
-        <Quotes num_quotes={2} />
-      </section>
-    </>
+    <section id="quotes">
+      <header>A couple quotes to remind you how amazing you are:</header>
+      <Quotes num_quotes={2} />
+    </section>
   </Layout>
 )
 
