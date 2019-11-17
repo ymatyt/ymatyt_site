@@ -21,7 +21,7 @@ The code for this site is based on the <a href="https://www.gatsbyjs.org/">Gatsb
     Use the Git CLI to clone the site code.
 
     ```shell
-    git clone git@github.com:wt/ymatyt_site_code.git
+    git clone git@github.com:ymatyt/ymatyt_site.git
     ```
 
 1.  **Install NPM and Gatsby CLI**
