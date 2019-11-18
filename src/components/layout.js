@@ -36,6 +36,9 @@ const Layout = ({ children }) => {
           Contribute your positivity to YMATYT{" "}
           <a href="https://github.com/ymatyt/ymatyt_site">here</a>.
         </div>
+        <div>
+          Badge swag and other wares available at the <a href="https://www.etsy.com/shop/ymatyt">YMATYT shop</a>.
+        </div>
       </footer>
     </>
   )
