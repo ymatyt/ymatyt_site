@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Box from '@material-ui/core/Box';
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <footer>
+      <Box component="main" mt="1rem" ml="1.45rem">{children}</Box>
+      <Box component="footer">
         <div>
           © {new Date().getFullYear()},{` `}
           <a href="https://github.com/wt">Wren Turkal</a>.
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         <div>
           Badge swag and other wares available at the <a href="https://www.etsy.com/shop/ymatyt">YMATYT shop</a>.
         </div>
-      </footer>
+      </Box>
     </>
   )
 }

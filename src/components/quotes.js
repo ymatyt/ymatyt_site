@@ -52,7 +52,7 @@ const Quotes = ({ num_quotes }) => {
     })
     quotes.push(
       <figure key={index}>
-        <blockquote>
+        <blockquote style={{margin: 0}}>
           <q>{quote}</q>
         </blockquote>
         <figcaption>

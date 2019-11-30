@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Quotes from "../components/quotes"
-import "./common.css"
 
 const IndexPage = () => (
   <Layout>

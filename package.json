@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Wren Turkal <wt@penguintechs.org>",
   "dependencies": {
+    "@material-ui/core": "^4.7.0",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-tagmanager": "^2.1.18",
@@ -14,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.3.4",
     "gatsby-plugin-sitemap": "^2.2.22",
     "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-theme-material-ui": "^1.0.5",
     "gatsby-transformer-sharp": "^2.3.6",
     "gatsby-transformer-toml": "^2.2.19",
     "prop-types": "^15.7.2",

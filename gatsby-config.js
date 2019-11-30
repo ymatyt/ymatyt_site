@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://ymatyt.com/`
   },
   plugins: [
+    `gatsby-theme-material-ui`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
