@@ -3,7 +3,7 @@ module.exports = {
     title: `You're More Amazing Than You Think!`,
     description: `YMATYT is a site to help folks realize their importance in the world.`,
     author: `Wren Turkal`,
-    siteUrl: `https://ymatyt.com/`
+    siteUrl: `https://ymatyt.com/`,
   },
   plugins: [
     `gatsby-theme-material-ui`,
@@ -34,7 +34,7 @@ module.exports = {
       options: {
         name: `data`,
         path: `${__dirname}/data`,
-      }
+      },
     },
     `gatsby-transformer-toml`,
     {

@@ -28,10 +28,8 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   let seoTitle
-  if (title === "")
-    seoTitle = `${site.siteMetadata.title}`
-  else
-    seoTitle = title
+  if (title === "") seoTitle = `${site.siteMetadata.title}`
+  else seoTitle = title
 
   return (
     <Helmet
