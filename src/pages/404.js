@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby-theme-material-ui"
+import Link from "@material-ui/core/Link"
 import Typography from "@material-ui/core/Typography"
 
 import Layout from "../components/layout"
@@ -14,7 +14,7 @@ const NotFoundPage = () => (
         You just tried to added a page that doesn&apos;t exist... the sadness.
       </Typography>
       <Typography>
-        Please check out our home page <Link to="/">here</Link>.
+        Please check out our home page <Link href="/">here</Link>.
       </Typography>
     </Layout>
   </>

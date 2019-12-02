@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby-theme-material-ui"
 import classNames from "classnames"
 import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
+import Link from "@material-ui/core/Link"
 import MenuIcon from "@material-ui/icons/Menu"
 import Tooltip from "@material-ui/core/Tooltip"
 
@@ -47,7 +47,7 @@ const Header = ({ siteTitle, className }) => {
             </IconButton>
           </Tooltip>
           <Typography variant="h4" className={classes.title}>
-            <Link className={classes.titleLink} to="/">
+            <Link className={classes.titleLink} href="/">
               {siteTitle}
             </Link>
           </Typography>

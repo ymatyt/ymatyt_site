@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { makeStyles } from "@material-ui/core/styles"
-import { Link } from "gatsby-theme-material-ui"
 import Box from "@material-ui/core/Box"
+import Link from "@material-ui/core/Link"
 import Typography from "@material-ui/core/Typography"
 
 import Header from "./header"
@@ -55,15 +55,15 @@ const Layout = ({ children }) => {
       <Box component="footer" className={classes.footer}>
         <Typography>
           © {new Date().getFullYear()},{` `}
-          <Link to="https://github.com/wt">Wren Turkal</Link>.
+          <Link href="https://github.com/wt">Wren Turkal</Link>.
         </Typography>
         <Typography>
           Contribute your positivity to YMATYT{" "}
-          <Link to="https://github.com/ymatyt/ymatyt_site">here</Link>.
+          <Link href="https://github.com/ymatyt/ymatyt_site">on Github</Link>.
         </Typography>
         <Typography>
           Badge swag and other wares available at the{" "}
-          <Link to="https://www.etsy.com/shop/ymatyt">YMATYT shop</Link>.
+          <Link href="https://www.etsy.com/shop/ymatyt">YMATYT shop</Link>.
         </Typography>
       </Box>
     </>
