@@ -6,6 +6,8 @@
   "author": "Wren Turkal <wt@penguintechs.org>",
   "dependencies": {
     "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "classnames": "^2.2.6",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-tagmanager": "^2.1.18",

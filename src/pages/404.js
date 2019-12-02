@@ -1,14 +1,23 @@
 import React from "react"
+import { Link } from "gatsby-theme-material-ui"
+import Typography from "@material-ui/core/Typography"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <>
+    <SEO title="Error 404: Not found" />
+    <Layout>
+      <Typography variant="h2">Error 404 (NOT FOUND)</Typography>
+      <Typography>
+        You just tried to added a page that doesn&apos;t exist... the sadness.
+      </Typography>
+      <Typography>
+        Please check out our home page <Link to="/">here</Link>.
+      </Typography>
+    </Layout>
+  </>
 )
 
 export default NotFoundPage
