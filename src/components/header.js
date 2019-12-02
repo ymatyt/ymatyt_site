@@ -8,6 +8,7 @@ import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
+import Tooltip from "@material-ui/core/Tooltip"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,13 +37,15 @@ const Header = ({ siteTitle, className }) => {
     <>
       <AppBar position="static" className={classNames(className, classes.root)}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
+          <Tooltip title="Doesn't work yet." arrow>
+            <IconButton
+              edge="start"
+              className={classes.menuButton}
+              aria-label="menu"
+            >
+              <MenuIcon />
+            </IconButton>
+          </Tooltip>
           <Typography variant="h4" className={classes.title}>
             <Link className={classes.titleLink} to="/">
               {siteTitle}
