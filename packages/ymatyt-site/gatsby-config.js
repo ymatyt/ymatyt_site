@@ -43,6 +43,13 @@ module.exports = {
         id: "GTM-TCSKLZB",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gapi`,
+      options: {
+        apiKey: `AIzaSyAHamT1Y1X8eLxcwF07C39XpMLK-L2nr4A`,
+        clientId: `584057250536-3it1hgenaceu75lhc9uaauta4co3v5iu.apps.googleusercontent.com`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -2,7 +2,7 @@
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Content-Security-Policy = "frame-src 'none';"
+    Content-Security-Policy = "frame-src https://content.googleapis.com https://accounts.google.com; script-src 'unsafe-inline' 'self' https://apis.google.com https://www.googletagmanager.com https://www.google-analytics.com"
 
 [build]
   command = "yarn install && yarn build"

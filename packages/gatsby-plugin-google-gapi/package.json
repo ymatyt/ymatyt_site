@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-plugin-google-gapi",
+  "description": "A Gatsbyjs plugin for the Google API.",
+  "author": "Wren Turkal <wt@penguintechs.org>",
+  "license": "Apache-2.0",
+  "private": true,
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+  },
+  "version": "0.0.0"
+}
