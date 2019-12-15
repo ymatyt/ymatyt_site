@@ -3,3 +3,7 @@
   [headers.values]
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Content-Security-Policy = "frame-src 'none';"
+
+[build]
+  command = "yarn install && yarn build"
+  publish = "packages/ymatyt-site/public/"
