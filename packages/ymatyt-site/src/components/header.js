@@ -38,7 +38,7 @@ const Header = ({ siteTitle, className }) => {
   const classes = useStyles({ siteTitle: siteTitle, className: className })
   const { authed, userFirstName } = useAuthStatus()
 
-  //non-popup lib ui
+  // login/profile menu state
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
 
