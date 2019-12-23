@@ -45,6 +45,7 @@ export function registerAuthStatusListener(handler) {
 
 export function useAuthStatus() {
   const [isAuthed, setIsAuthed] = useState(null)
+  const [userFirstName, setUserFirstName] = useState(null)
 
   useEffect(() => {
     let handle = setTimeout(function f() {
@@ -63,8 +64,19 @@ export function useAuthStatus() {
       registerAuthStatusListener(status => {
         console.info("User login status changed: %s", status)
         setIsAuthed(status)
+        if (status) {
+          setUserFirstName(window.gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getGivenName())
+        } else {
+          setUserFirstName(null)
+        }
       })
-      setIsAuthed(window.gapi.auth2.getAuthInstance().isSignedIn.get())
+      let status = window.gapi.auth2.getAuthInstance().isSignedIn.get()
+      setIsAuthed(status)
+      if (status) {
+        setUserFirstName(window.gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getGivenName())
+      } else {
+        setUserFirstName(null)
+      }
 
       console.groupEnd()
 
@@ -76,7 +88,7 @@ export function useAuthStatus() {
     }
   }, [])
 
-  return isAuthed
+  return {authed: isAuthed, userFirstName: userFirstName}
 }
 
 export function loginUser() {

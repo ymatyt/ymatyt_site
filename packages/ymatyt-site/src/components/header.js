@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 
 const Header = ({ siteTitle, className }) => {
   const classes = useStyles({ siteTitle: siteTitle, className: className })
-  const authed = useAuthStatus()
+  const { authed, userFirstName } = useAuthStatus()
 
   //non-popup lib ui
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -54,6 +54,7 @@ const Header = ({ siteTitle, className }) => {
     if (authed) {
       return (
         <>
+          <Typography>Hello, {userFirstName}!</Typography>
           <IconButton
             className={classes.menuButton}
             aria-label="user-menu"
@@ -68,6 +69,7 @@ const Header = ({ siteTitle, className }) => {
             keepMounted
           >
             <MenuItem
+              selected
               onClick={x => {
                 handleClose(x)
                 logoutUser(x)
