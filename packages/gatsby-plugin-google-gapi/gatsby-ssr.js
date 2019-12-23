@@ -21,9 +21,6 @@ export const onRenderBody = (
             )
 
             function __plugin_google_gapi_auth_initClient() {
-              __plugin_google_gapi_initialized.client = false
-              __plugin_google_gapi_initialized.auth2 = false
-
               let discoveryURLs = [
                 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest',
               ]
@@ -32,6 +29,7 @@ export const onRenderBody = (
                 'openid',
                 'profile',
                 'email',
+                'https://www.googleapis.com/auth/drive.appdata',
               ]
 
               console.debug("Intializing GAPI client...")
