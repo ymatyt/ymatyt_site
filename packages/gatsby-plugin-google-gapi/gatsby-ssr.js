@@ -4,7 +4,7 @@ import React from "react"
 
 export const onRenderBody = (
   { setHeadComponents, setPostBodyComponents },
-  { apiKey, clientId }
+  { apiKey, clientId, discoveryURLs, scopes }
 ) => {
   setHeadComponents(
     <React.Fragment key="plugin-google-gapi">
@@ -22,14 +22,14 @@ export const onRenderBody = (
 
             function __plugin_google_gapi_auth_initClient() {
               let discoveryURLs = [
-                'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest',
+                '${discoveryURLs.join(',\n                ')}'
               ]
 
-              let scopes = [
+              let requestedScopes = [
                 'openid',
                 'profile',
                 'email',
-                'https://www.googleapis.com/auth/drive.appdata',
+                '${scopes.join(',\n                ')}'
               ]
 
               console.debug("Intializing GAPI client...")
@@ -37,7 +37,7 @@ export const onRenderBody = (
                 apiKey: '${apiKey}',
                 discoveryDocs: discoveryURLs,
                 clientId: '${clientId}',
-                scope: scopes.join(' '),
+                scope: requestedScopes.join(' '),
               }).then(() => {
                 console.log('Client initialized...')
                 __plugin_google_gapi_initialized.client = true
