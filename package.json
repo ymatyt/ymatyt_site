@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "build": "yarn workspace @ymatyt-site/ymatyt-site build",
-    "develop": "yarn workspace @ymatyt-site/ymatyt-site develop"
+    "develop": "yarn workspace @ymatyt-site/ymatyt-site develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\" && yarn workspaces run format"
   },
   "workspaces": [
     "packages/*"
