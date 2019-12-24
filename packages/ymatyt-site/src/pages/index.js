@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Quotes from "../components/quotes"
 
-const IndexPage = () => (
+export default () => (
   <>
     <SEO title="" />
     <Layout>
@@ -16,5 +16,3 @@ const IndexPage = () => (
     </Layout>
   </>
 )
-
-export default IndexPage
