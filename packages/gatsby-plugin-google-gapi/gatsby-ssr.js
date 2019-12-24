@@ -7,7 +7,8 @@ export const onRenderBody = (
   { apiKey, clientId, discoveryURLs, scopes }
 ) => {
   setHeadComponents(
-    <script key="plugin-google-gapi"
+    <script
+      key="plugin-google-gapi"
       dangerouslySetInnerHTML={{
         __html: `
           var __plugin_google_gapi_initialized = new Proxy(
@@ -21,14 +22,14 @@ export const onRenderBody = (
 
           function __plugin_google_gapi_auth_initClient() {
             let discoveryURLs = [
-              '${discoveryURLs.join(',\n                ')}'
+              '${discoveryURLs.join(",\n                ")}'
             ]
 
             let requestedScopes = [
               'openid',
               'profile',
               'email',
-              '${scopes.join(',\n                ')}'
+              '${scopes.join(",\n                ")}'
             ]
 
             console.debug("Intializing GAPI client...")
@@ -59,7 +60,8 @@ export const onRenderBody = (
   )
 
   setPostBodyComponents(
-    <script key="plugin-google-gapi"
+    <script
+      key="plugin-google-gapi"
       src="https://apis.google.com/js/api.js?onload=__plugin_google_gapi_init"
       async
       defer

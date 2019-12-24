@@ -49,11 +49,9 @@ module.exports = {
         apiKey: `AIzaSyAHamT1Y1X8eLxcwF07C39XpMLK-L2nr4A`,
         clientId: `584057250536-3it1hgenaceu75lhc9uaauta4co3v5iu.apps.googleusercontent.com`,
         discoveryURLs: [
-          'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest',
+          "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
         ],
-        scopes: [
-          'https://www.googleapis.com/auth/drive.appdata',
-        ],
+        scopes: ["https://www.googleapis.com/auth/drive.appdata"],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -65,7 +65,13 @@ export function useAuthStatus() {
         console.info("User login status changed: %s", status)
         setIsAuthed(status)
         if (status) {
-          setUserFirstName(window.gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getGivenName())
+          setUserFirstName(
+            window.gapi.auth2
+              .getAuthInstance()
+              .currentUser.get()
+              .getBasicProfile()
+              .getGivenName()
+          )
         } else {
           setUserFirstName(null)
         }
@@ -73,7 +79,13 @@ export function useAuthStatus() {
       let status = window.gapi.auth2.getAuthInstance().isSignedIn.get()
       setIsAuthed(status)
       if (status) {
-        setUserFirstName(window.gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getGivenName())
+        setUserFirstName(
+          window.gapi.auth2
+            .getAuthInstance()
+            .currentUser.get()
+            .getBasicProfile()
+            .getGivenName()
+        )
       } else {
         setUserFirstName(null)
       }
@@ -88,7 +100,7 @@ export function useAuthStatus() {
     }
   }, [])
 
-  return {authed: isAuthed, userFirstName: userFirstName}
+  return { authed: isAuthed, userFirstName: userFirstName }
 }
 
 export function loginUser() {
