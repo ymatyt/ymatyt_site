@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "runtimeExecutable": "/snap/bin/chromium",
+            "name": "Launch Chromium against localhost on Ubuntu",
+            "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
